@@ -1,0 +1,22 @@
+#headBank {
+	text-align: center;
+}
+
+.center { 
+	height: 200px;
+	position: relative;
+	border: 2px solid blue; 
+}
+
+.center button {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+p {
+	text-align: center;
+}

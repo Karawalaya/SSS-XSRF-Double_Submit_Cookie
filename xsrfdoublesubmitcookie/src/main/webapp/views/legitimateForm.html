@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="/xsrfdoublesubmitcookie/resrcs/css&js/customized02.css">
+		<link rel="stylesheet" href="/xsrfdoublesubmitcookie/resrcs/css&js/bootstrap/css/bootstrap.css">
+		
+		<title>Legitimate Form</title>
+	</head>
+	
+	<body>
+		<h2 align="center">Fill and Submit the below Money Transference Form!</h2>
+		<!-- 
+			FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM
+	 	-->
+   		<form style="align:center" name="moneyTransferenceForm" action="/xsrfdoublesubmitcookie/TransferenceController" method="post">
+			<div class="container">
+				<label for="accountNo"><b>Receiver Account</b></label>
+				<input type="text" placeholder="Receiver's Account Number" name="accountNo" required>
+
+				<label for="transferAmount"><b>Transfer Amount</b></label>
+				<input type="text" placeholder="Amount to Transerf (in LKR)" name="transferAmount" required>
+
+				<button type="submit" style="border-radius: 25px">Transfer</button>
+			</div>
+		</form>
+
+		<script type="text/javascript">
+			function getCookie(cookieName) {
+			    var name = cookieName + "=";
+			    var decodedCookie = decodeURIComponent(document.cookie);
+			    var cookieArray = decodedCookie.split(';');
+			    for(var i = 0; i < cookieArray.length; i++) {
+			        var cook = cookieArray[i];
+			        while (cook.charAt(0) == ' ') {
+			        	cook = cook.substring(1);
+			        }
+			        if (cook.indexOf(name) == 0) {
+			            return cook.substring(name.length, cook.length);
+			        }
+			    }
+			    return "";
+			}
+			
+			function insertCookieValueToForm() {
+			    var cookieValue = getCookie("syncToken");
+
+			    if (cookieValue != "") {
+			    	alert("Welcome again 2");
+			    	var input = document.createElement("input");
+			
+			    	input.setAttribute("type", "hidden");
+			    	input.setAttribute("name", "hiddenTokenField");
+			    	input.setAttribute("value", cookieValue);
+			
+			    	document.getElementById("moneyTransferenceForm").appendChild(input);
+			    }
+			}
+			
+			appendCookieValue();
+		</script>
+	</body>
+</html>
