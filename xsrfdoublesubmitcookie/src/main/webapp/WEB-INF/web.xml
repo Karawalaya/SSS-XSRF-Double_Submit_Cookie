@@ -18,10 +18,10 @@
   	<servlet-class>controller_servlet.TransferenceController</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>Logout</servlet-name>
-  	<display-name>Logout</display-name>
+  	<servlet-name>LogoutController</servlet-name>
+  	<display-name>LogoutController</display-name>
   	<description></description>
-  	<servlet-class>controller_servlet.Logout</servlet-class>
+  	<servlet-class>controller_servlet.LogoutController</servlet-class>
   </servlet>
   
   <servlet-mapping>
@@ -33,8 +33,8 @@
   	<url-pattern>/TransferenceController</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>Logout</servlet-name>
-  	<url-pattern>/Logout</url-pattern>
+  	<servlet-name>LogoutController</servlet-name>
+  	<url-pattern>/LogoutController</url-pattern>
   </servlet-mapping>
 
   <welcome-file-list>

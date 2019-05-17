@@ -17,13 +17,13 @@ import pojo_model.SyncTokenGenerator;
 import pojo_model.User;
 
 /**
- * This LoginController is the servlet designed to handle the login functionality.
+ * This LoginController is the Servlet designed to handle the login functionality.
  * 
- * This controler checks whether the user credentials are valid, sets the session parameters, generates a unique
+ * This controller checks whether the user credentials are valid, sets the session parameters, generates a unique
  * token, creates two cookies - one using the session id and another using the generated token, sets those
  * cookies to the response and sends them to the client browser.
  * 
- * At the end of the function, 
+ * At the end of the post function, 
  * if the user is authenticated, he/she is directed to the dashboard.jsp,
  * else, he/she is directed to the login.jsp.
  * 

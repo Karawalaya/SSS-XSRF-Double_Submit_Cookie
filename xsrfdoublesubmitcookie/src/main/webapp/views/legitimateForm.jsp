@@ -1,5 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+
+<!--
+This is the legitimate user's Money Transfering page.
+
+Here contains the form which is presented by the bank itself to the legitimate user, which can be used by him/her
+to transfer money to another account.
+
+Here, the XSRF mitigation is in place, where there is a Javascript code which exracts the token cookie to get the 
+token and bind it to the form as a hidden field and is sent to the server.
+-->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -39,7 +49,7 @@
 				<button type="submit" style="border-radius: 25px">Transfer</button>
 			</div>
 		</form>
-		<form action="/xsrfdoublesubmitcookie/Logout">
+		<form action="/xsrfdoublesubmitcookie/LogoutController">
 			<button type="submit" style="width: 50%; border-radius: 25px; background-color: #0000a0; align: center;">Logout</button>
 		</form>
 

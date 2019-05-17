@@ -1,5 +1,11 @@
 package pojo_model;
 
+/**
+ * This POJO (Plain Old Java Object), or model object, is used to store user details.
+ * 
+ * @author Karawalaya - Isuru Samarasekara
+ * @since 2019-05-17
+ */
 public class User {
 	private String username;
 	private String password;
