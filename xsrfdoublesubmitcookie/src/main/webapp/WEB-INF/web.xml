@@ -17,6 +17,12 @@
   	<description></description>
   	<servlet-class>controller_servlet.TransferenceController</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Logout</servlet-name>
+  	<display-name>Logout</display-name>
+  	<description></description>
+  	<servlet-class>controller_servlet.Logout</servlet-class>
+  </servlet>
   
   <servlet-mapping>
   	<servlet-name>LoginController</servlet-name>
@@ -25,6 +31,10 @@
   <servlet-mapping>
   	<servlet-name>TransferenceController</servlet-name>
   	<url-pattern>/TransferenceController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Logout</servlet-name>
+  	<url-pattern>/Logout</url-pattern>
   </servlet-mapping>
 
   <welcome-file-list>

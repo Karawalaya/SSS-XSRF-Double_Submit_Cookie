@@ -9,7 +9,8 @@ public class CookieFunctions {
 	public static boolean tokenValidate(String clientHiddenToken, HttpServletRequest request) {
 //		Optional<String> cookieValue = Stream.of(request.getCookies()).filter(c -> c.getName().equalsIgnoreCase("syncToken")).map(Cookie::getValue).findFirst();
 //	    String sycToken = cookieValue.get();
-		System.out.println(clientHiddenToken);
+		
+		if (clientHiddenToken == null) return false;
 		
 	    String cookieToken = null;
 	    Cookie[] cookies = request.getCookies();
@@ -22,7 +23,6 @@ public class CookieFunctions {
 	    	return clientHiddenToken.equals(cookieToken);
 	    	}
 	    }
-	    
 	    return false;
 	}
 	
