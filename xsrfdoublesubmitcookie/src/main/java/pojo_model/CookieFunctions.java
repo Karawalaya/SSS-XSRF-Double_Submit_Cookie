@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 public class CookieFunctions {
 	
 	/**
-	 * This methos is written to validate the hidden token sent via the legitimate money transference form.
+	 * This method is written to validate the hidden token sent via the legitimate money transference form.
 	 * @param clientHiddenToken This is the first parameter to tokenValidate method which is of type String.
 	 * @param request  This is the second parameter to tokenValidate method which is of type HttpServletRequest.
 	 * @return boolean This returns true if there is a matching cookie which has the name syncToken containing the clientHiddenToken as the value.

@@ -15,7 +15,7 @@ import pojo_model.CookieFunctions;
 /**
  * * This TransferenceController is the Servlet designed to validate a transaction.
  * 
- * This controller, with the help of the CookieFunctions.java class, validates whether the form contained hidden token is equal
+ * This controller, with the help of the CookieFunctions.java class, validates whether the form-contained hidden token is equal
  * to the value of the cookie, also sent by the browser, with the name 'syncToken' - if there is a cookie like that.
  * 
  * At the end of the post function, 
