@@ -48,7 +48,7 @@ public class LoginController extends HttpServlet {
 			
 			response.addCookie(CookieGenerator.SESSION_ID_COOKIE.apply(userSession));
 			response.addCookie(CookieGenerator.SYNC_TOKEN_COOKIE.apply(synchronizationToken));
-			
+
 			response.sendRedirect("/xsrfdoublesubmitcookie/views/dashboard.jsp");
 		}
 	    else {

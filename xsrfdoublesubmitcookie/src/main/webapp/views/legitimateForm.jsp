@@ -69,20 +69,20 @@
 		        }
 		    }
 		    return "";
-		}
+			}
+		
+			function insertCookieValueToForm() {
+			    var cookieValue = getCookieValueOf("syncToken");
 	
-		function insertCookieValueToForm() {
-		    var cookieValue = getCookieValueOf("syncToken");
+			    if (cookieValue != "") {
+			    	var input = document.createElement("INPUT");
+			    	input.setAttribute("type", "hidden");
+			    	input.setAttribute("name", "hiddenTokenField");
+			    	input.setAttribute("value", cookieValue);
+			    	document.getElementById("moneyTransferenceForm").appendChild(input);
+			    }
+			}
 
-		    if (cookieValue != "") {
-		    	var input = document.createElement("INPUT");
-		    	input.setAttribute("type", "hidden");
-		    	input.setAttribute("name", "hiddenTokenField");
-		    	input.setAttribute("value", cookieValue);
-		    	document.getElementById("moneyTransferenceForm").appendChild(input);
-		    }
-		}
-	
 		insertCookieValueToForm();
 		</script>
 	</body>

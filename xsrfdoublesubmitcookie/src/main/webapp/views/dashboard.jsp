@@ -49,7 +49,9 @@ to execute a request to the server to transfer money, unbeknown to the user.
 			<!-- Link directed to the legitimate transference form -->
 			<a class="nav-link" href="/xsrfdoublesubmitcookie/views/legitimateForm.jsp" target="_blank"><button style="border-radius: 25px">Act as the legal user</button></a>
 			<!-- Link directed to the illegitimate transference form -->
-			<a class="nav-link" href="/xsrfdoublesubmitcookie/forgerViews/fabricatedForm.html" target="_blank"><button style="border-radius: 25px">Act as the forger</button></a>
+			<a class="nav-link" href="/xsrfdoublesubmitcookie/forgerViews/replicatedForm.html" target="_blank"><button style="border-radius: 25px">Act as the forger - Exactly Replicated Form (Infeasible)</button></a>
+			<!-- Link directed to the illegitimate transference form -->
+			<a class="nav-link" href="/xsrfdoublesubmitcookie/forgerViews/onImageClickForm.html" target="_blank"><button style="border-radius: 25px">Act as the forger - Image Click Submission (Feasible)</button></a>
 		</div>
 		<form action="/xsrfdoublesubmitcookie/Logout">
 			<button type="submit" style="border-radius: 25px; background-color: #0000a0">Logout</button>
