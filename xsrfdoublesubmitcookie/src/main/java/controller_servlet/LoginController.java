@@ -17,23 +17,24 @@ import pojo_model.SyncTokenGenerator;
 import pojo_model.User;
 
 /**
- *
- *
+ * This LoginController is the servlet designed to handle the login functionality.
+ * 
+ * This controler checks whether the user credentials are valid, sets the session parameters, generates a unique
+ * token, creates two cookies - one using the session id and another using the generated token, sets those
+ * cookies to the response and sends them to the client browser.
+ * 
+ * At the end of the function, 
+ * if the user is authenticated, he/she is directed to the dashboard.jsp,
+ * else, he/she is directed to the login.jsp.
+ * 
+ * @author Karawalaya - Isuru Samarasekara
+ * @since 2019-05-17
  */
 public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 *
-	 *
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
-
-	/**
-	 *
-	 *
+	 * Post method implementation to handle data sent via the method 'post'.
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		User user = new User(request.getParameter("username"), request.getParameter("password"));

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 
-<!-- This is the Index/ Welcome page. This is the common Homepage for the visitors as well as registered customers -->
+<!-- This is the Index/ Welcome page, the common Homepage for the visitors as well as registered customers -->
 
 <!DOCTYPE html>
 <html>
@@ -27,7 +27,7 @@
 		</p>
 		<div class="center">
 			<a href="/xsrfdoublesubmitcookie/views/login.jsp"><button class="btn btn-primary">Login</button></a>
-			<!-- User is directed to the Login page by clicking this button -->
+			<!-- User is directed to the Login page by clicking the above button -->
 		</div>
 	</body>
 </html>

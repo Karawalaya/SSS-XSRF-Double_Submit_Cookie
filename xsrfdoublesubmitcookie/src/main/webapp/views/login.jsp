@@ -24,6 +24,12 @@
 		<!-- 
 			FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM
 	 	-->
+	 	<!-- The below form is the login form, where the registered customer must provide his/her credentials -->
+	 	<!-- For the demonstration purpose, the credentials are hard coded -->
+	 	<!-- 
+	 		Username: LegitBrotherDoubleCookie
+	 		PAssword: doubleCookieStuff
+	 	 -->
    		<form style="align:center" action="/xsrfdoublesubmitcookie/LoginController" method="post">
 			<div class="imgcontainer">
 				<img src="/xsrfdoublesubmitcookie/resrcs/imgs/login_image.png" alt="Avatar" class="avatar">

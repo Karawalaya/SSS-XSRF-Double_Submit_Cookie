@@ -4,14 +4,17 @@
 <!--
 This is the Dashboard of the logged in customer.
 From here the user can navigate to different services provided by the web application.
-For now, the given two links, both, are directed to money transference service.
+For simplicity purposes, the given three links, are directed to money transference services only.
 
-From the given two links, one link  directs the user to the legitimate transference form where depending on whther the
-correct details are inputed, the service will prevail and transfer the amount.
+From the given three links, 
+the first link  directs the user to the legitimate transference form where depending on whether the
+correct details are inputed by the legitimate user, the service will prevail and transfer the amount.
 
-The other link directs the user to the illegitimate transference form where it is forged by an attacker who is trying to get the user
-to execute a request to the server to transfer money, unbeknown to the user.
+The second link directs the user to an illegitimate transference form where it is the exact replication of the legitimate form,
+fabricated by an attacker who is trying to get the user to execute a request to the server in order to transfer money, 
+unbeknown to the user.
 
+The
 -->
 
 <!DOCTYPE html>
