@@ -56,4 +56,26 @@ public class CookieFunctions {
 		
 		return response;
 	}
+	
+	/**
+	 * This method is written to validate the session id of the user via sessionCookie.
+	 * @param request  This is the first parameter to sessionValidationBySessionCookie method which is of type HttpServletRequest.
+	 * @return boolean This returns true if there is a matching cookie which contains the session id of the client.
+	 */
+	public static boolean sessionValidationBySessionCookie(HttpServletRequest request) {
+		String userSessionID = request.getSession(false).getId();
+
+		if (userSessionID == null) return false;
+		
+	    String cookieSessionID = null;
+	    Cookie[] cookies = request.getCookies();
+	    for(Cookie cookie : cookies) {
+	    	if(cookie.getName().equals("userSesID")) {
+	    		cookieSessionID = cookie.getValue();
+
+	    	return userSessionID.equals(cookieSessionID);
+	    	}
+	    }
+	    return false;
+	}
 }
