@@ -3,7 +3,6 @@ package pojo_model;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 /**
  * This POJO (Plain Old Java Object), or model object, is used to provide two basic functionalities to help the Servlets.
  * First is to validate the token and second is to remove cookies from the client browser.
