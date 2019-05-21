@@ -46,23 +46,27 @@ public class TransferenceController extends HttpServlet {
 			rd.forward(request, response);
 		}
 		
-		String clientHiddenToken = request.getParameter("hiddenTokenField");
-		
-		if (CookieFunctions.tokenValidate(clientHiddenToken, request)) {
-			response.getWriter().append("Successfully Transfered!");
-		}
-		else {
-//			response = CookieFunctions.cookiesInvalidate(response);
-//			userSession.removeAttribute("sessionUserName");
-//			userSession.invalidate();
-//			
-//			PrintWriter out = response.getWriter();
-//			out.println("<script type=\"text/javascript\">");
-//			out.println("alert('Transfer Unsuccessfull!');");
-//			out.println("location='/xsrfdoublesubmitcookie/views/login.jsp';");
-//			out.println("</script>");
+		if(CookieFunctions.sessionValidationBySessionCookie(request)) {
+			String clientHiddenToken = request.getParameter("hiddenTokenField");
 			
-			response.getWriter().append("Transfer Unsuccessful!");
+			if (CookieFunctions.tokenValidate(clientHiddenToken, request)) {
+				response.getWriter().append("Successfully Transfered!");
+			}
+			else {
+	//			response = CookieFunctions.cookiesInvalidate(response);
+	//			userSession.removeAttribute("sessionUserName");
+	//			userSession.invalidate();
+	//			
+	//			PrintWriter out = response.getWriter();
+	//			out.println("<script type=\"text/javascript\">");
+	//			out.println("alert('Transfer Unsuccessfull!');");
+	//			out.println("location='/xsrfdoublesubmitcookie/views/login.jsp';");
+	//			out.println("</script>");
+				
+				response.getWriter().append("Transfer Unsuccessful!");
+			}
+		} else {
+			response.getWriter().append("Session Validation using Session Cookie Failed!");
 		}
 	}
 
