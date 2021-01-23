@@ -2,7 +2,7 @@
 A basic application to demonstrate the implementation of 'Double Submit Cookie Pattern' to avoid Cross-Site Request Forgery (CSRF) attacks in web applications.
 
 ## Module
-SSS - Secure Software
+SSS - Secure Software Systems
 
 ## How to run
 This was created using Eclipse JEE.
