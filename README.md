@@ -1,7 +1,7 @@
-# XSRF-Double Submit Cookie
+# XSRF Prevention-Double Submit Cookie
 A basic application to demonstrate the implementation of 'Double Submit Cookie Pattern' to avoid Cross-Site Request Forgery (CSRF) attacks in web applications.
 
-# Module
+## Module
 SSS - Secure Software
 
 ## How to run
